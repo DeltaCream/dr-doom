@@ -4,18 +4,25 @@ import { DataTable } from "@/components/data-table";
 import { SectionCards } from "@/components/section-cards";
 import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { use } from "react";
 
 // import data from "./data.json"
 
 export default async function Page() {
   const bearer_token = process.env.BEARER_TOKEN;
   const base_url = process.env.NEXT_PUBLIC_API_URL;
-  const response = await fetch(`${base_url}/todos`, {
+  /* const response = await fetch(`${base_url}/todos`, {
     headers: {
       Authorization: `Bearer ${bearer_token}`,
     },
   });
-  const data = response ? await response.json() : null;
+  const data = response ? await response.json() : null; */
+  const data = [{
+    id: 1,
+    userId: 1,
+    title: "delectus aut autem",
+    completed: false,
+  }];
   return (
     <SidebarProvider
       style={
