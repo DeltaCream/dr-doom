@@ -10,3 +10,14 @@ a. Flowbite
 b. Lucide
 5. Server Actions and Server-Side Rendering
 6. Suspense and Skeletons
+
+Parts of the website:
+1. Registration
+2. Login
+3. Dashboard
+- Add
+- Edit
+- Delete
+4. Audit Logs
+- Website Audit (what browser was used)
+- Operation Audit (what operation was performed, who changed what, and what changed)
